@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  
+</head>
+<body>
+<div class="jumbotron" style="color: white; background: #070000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #070000, #4C0001, #070000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #070000, #4C0001, #070000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="input-name">Train Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+                </div>
+                <div class="form-group">
+                    <label for="input-destination">Destination</label>
+                    <input type="text" class="form-control" id="input-destination">
+                </div>
+                <div class="form-group">
+                    <label for="input-time">First Train Time</label>
+                    <input type="time" class="form-control" id="input-time">
+                </div>
+                <div class="form-group">
+                    <label for="input-frequencey">Arrival Frequencey</label>
+                    <input type="text" class="form-control" id="input-frequencey">
+                </div>
+            </form>
+            <button class="btn btn-dark" type="submit"> Log That Train!</button>
+        </div>
+            
+
+
+   </div> 
+
+
+
+</body>
+</html>
+
+
+
+### Overview
+
+In this assignment, you'll create a train schedule application that incorporates Firebase to host arrival and departure data. Your app will retrieve and manipulate this information with Moment.js. This website will provide up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.
+
+- - -
+
+### Setup
+
+* We'll leave that up to you -- however you like. Just make sure you're using Firebase to store data, GitHub to backup your project, and GithHub Pages to host your finished site.
+
+### Instructions
+
+* Make sure that your app suits this basic spec:
+  
+  * When adding trains, administrators should be able to submit the following:
+    
+    * Train Name
+    
+    * Destination 
+    
+    * First Train Time -- in military time
+    
+    * Frequency -- in minutes
+  
+  * Code this app to calculate when the next train will arrive; this should be relative to the current time.
+  
+  * Users from many different machines must be able to view same train times.
+  
+  * Styling and theme are completely up to you. Get Creative!
+
